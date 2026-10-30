@@ -10,6 +10,6 @@ Não há stubs de Cfinger nem DLL incompleta com o nome do plugin. Um clone novo
 
 Upload opcional apenas manual: diretório do executável público de testes e relatório da auditoria. Não inclui work, outputs, release, backups ou logs gerais.
 
-A execução real no GitHub depende de criação/push autorizados e não aconteceu nesta preparação. actionlint valida sintaxe; execução local dos comandos é evidência distinta.
+O primeiro push autorizado executou o workflow no GitHub e concluiu com sucesso: https://github.com/maxxbv/Cleared-hot-trainer/actions/runs/40986511330. Esse resultado cobre somente as verificações públicas descritas acima. actionlint e a simulação local também passaram; não substituem validação da integração com o jogo.
 
 Fonte: https://docs.github.com/en/actions/tutorials/build-and-test-code/net.

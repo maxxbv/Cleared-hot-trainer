@@ -10,13 +10,13 @@
 - Compilação local completa e testes de lógica/contratos.
 - Backup externo e testes de operações de instalação/remoção em pastas isoladas.
 - Estrutura Git, documentação, scripts e workflow de verificações públicas.
+- Repositório privado publicado com autorização: https://github.com/maxxbv/Cleared-hot-trainer; primeiro workflow público concluído com sucesso.
 
 ## Pendente
 
 - Obter e comprovar compatibilidade de loader/geração de interop/detours no jogo.
 - Validar dano, componentes, todas as armas/mísseis, calor, respawn, trocas e novas missões.
 - Verificar progressão de missões dependentes de destruição roteirizada.
-- Instalar gh, escolher destino e obter autorização explícita antes de criar remoto/push.
 - Escolher licença pública antes de eventual distribuição pública.
 - Planejar atualização de SDK/runtime alinhada à compatibilidade BepInEx.
 
@@ -26,4 +26,4 @@ O parser do build 692 recusa metadata 39: aceita 23–29. O servidor dos builds 
 
 A DLL completa depende de wrappers proprietários locais. CI hospedado não os recebe, não compila essa integração e não valida gameplay. Não há stubs artificiais para exibir sucesso.
 
-Nenhum recurso foi declarado funcional em missão. O jogo permanece sem mod nesta etapa. Nenhum remoto, push, tag ou release foi criado. Ver docs/TESTING.md; resultados locais e auditoria final ficam em logs.
+Nenhum recurso foi declarado funcional em missão. O jogo permanece sem mod. A branch main foi enviada ao repositório privado com autorização explícita; nenhuma tag ou GitHub Release foi criada. O GitHub CLI continua opcional: publicação e autenticação foram realizadas com a integração e o Git Credential Manager. Ver docs/TESTING.md; resultados locais e auditoria ficam em logs.

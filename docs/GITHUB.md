@@ -1,5 +1,7 @@
 # Git e publicação
 
+Estado atual: https://github.com/maxxbv/Cleared-hot-trainer foi criado como privado e recebeu main após autorização explícita. A publicação usou Git Credential Manager e a integração conectada; gh não é obrigatório para esse fluxo. As instruções abaixo permanecem como referência para operações futuras. Não alterar a visibilidade sem autorização.
+
 Repositório local em main. Não criar remoto/push, tags ou releases automaticamente.
 
 Git disponível; gh não encontrado no PATH. Instalação sugerida, a executar pelo usuário:

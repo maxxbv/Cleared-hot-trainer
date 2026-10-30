@@ -1,5 +1,7 @@
 # Resultado da preparação Git
 
+Registro histórico do estado anterior à autorização de publicação. Para o estado atual do repositório privado e do CI, consultar PROJECT_STATUS.md e docs/CI.md.
+
 ## Estrutura
 
 ~~~text
