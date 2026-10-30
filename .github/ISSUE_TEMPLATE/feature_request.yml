@@ -1,0 +1,10 @@
+name: Feature request
+description: Suggest a single-player improvement
+body:
+  - type: textarea
+    id: request
+    attributes:
+      label: Problem and proposed result
+      description: Keep requests within single-player scope; no anti-cheat evasion.
+    validations:
+      required: true

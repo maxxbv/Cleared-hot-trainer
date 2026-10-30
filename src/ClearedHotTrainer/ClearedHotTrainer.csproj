@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <AssemblyName>ClearedHot.LocalAssist</AssemblyName>
+    <DebugType>portable</DebugType>
+    <GameReferencePath Condition="'$(GameReferencePath)' == ''">$(MSBuildProjectDirectory)/../../work/interop</GameReferencePath>
+    <BepInExReferencePath Condition="'$(BepInExReferencePath)' == ''">$(MSBuildProjectDirectory)/../../work/tools/bepinex-pre2/BepInEx/core</BepInExReferencePath>
+    <InteropReferencePath Condition="'$(InteropReferencePath)' == ''">$(MSBuildProjectDirectory)/../../work/tools/interop-Runtime/net6.0</InteropReferencePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="$(GameReferencePath)/*.dll"><Private>false</Private></Reference>
+    <Reference Include="BepInEx.Core"><HintPath>$(BepInExReferencePath)/BepInEx.Core.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="BepInEx.Unity.IL2CPP"><HintPath>$(BepInExReferencePath)/BepInEx.Unity.IL2CPP.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(BepInExReferencePath)/0Harmony.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Il2CppInterop.Runtime"><HintPath>$(InteropReferencePath)/Il2CppInterop.Runtime.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+  <Target Name="ValidateLocalReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(GameReferencePath)/Cfinger.Runtime.dll')" Text="Local game interop references missing. Set GameReferencePath. Do not upload game DLLs to GitHub." />
+    <Error Condition="!Exists('$(BepInExReferencePath)/BepInEx.Unity.IL2CPP.dll')" Text="Public BepInEx API references missing. Set BepInExReferencePath; see DEVELOPMENT.md." />
+    <Error Condition="!Exists('$(InteropReferencePath)/Il2CppInterop.Runtime.dll')" Text="Il2CppInterop runtime references missing. Set InteropReferencePath." />
+  </Target>
+</Project>

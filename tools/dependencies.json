@@ -1,0 +1,38 @@
+[
+  {
+    "IncludedInPackage": false,
+    "Source": "https://github.com/SamboyCoding/Cpp2IL/releases/tag/2022.1.0-pre-release.21",
+    "SHA256": "663FB432433B4371FD1EE0EBC321A8FFF2A9AAC5AC4230C843F9E03DDEE4E04C",
+    "Name": "Cpp2IL pre-release.21"
+  },
+  {
+    "IncludedInPackage": false,
+    "Source": "https://github.com/BepInEx/BepInEx/releases/tag/v6.0.0-pre.2",
+    "SHA256": "616EC7EB06CF11B2A0000E8FCEF04D1B12BB58E84A2E0BDAC9523234FC193CEB",
+    "Name": "BepInEx pre.2 - compilation references only, NOT runtime loader"
+  },
+  {
+    "IncludedInPackage": false,
+    "Source": "https://github.com/BepInEx/Il2CppInterop/releases/tag/v1.5.3",
+    "SHA256": "2600DB9D9F14EED2EA389C2CCAB1E50BF3BE22D11A6F11693AA723EF305A6595",
+    "Name": "Il2CppInterop CLI 1.5.3"
+  },
+  {
+    "IncludedInPackage": false,
+    "Source": "https://github.com/BepInEx/Il2CppInterop/releases/tag/v1.5.3",
+    "SHA256": "050441303D7A10587A75826FDC6B79FE89183AEFABAF623D242BD029508D7709",
+    "Name": "Il2CppInterop Runtime 1.5.3"
+  },
+  {
+    "IncludedInPackage": false,
+    "Source": "https://github.com/BepInEx/Il2CppInterop/releases/tag/v1.5.3",
+    "SHA256": "BD04AEAEA696C8BEBCC3F195BC3583528BD56BD240860E36AF9AD441B4C35526",
+    "Name": "Il2CppInterop HarmonySupport 1.5.3"
+  },
+  {
+    "IncludedInPackage": false,
+    "Source": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/8.0/releases.json",
+    "SHA256": "AB9D4E4275DB9683A6B51640122D184C5C6AE5DA680D0C0ED82E994662353CC8",
+    "Name": "Microsoft .NET SDK 8.0.427 portable, verified against official SHA512"
+  }
+]
