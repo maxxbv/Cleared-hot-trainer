@@ -36,9 +36,9 @@ function Invoke-ProjectDotNet([string[]]$Arguments, [string]$LogName) {
     } finally { Pop-Location }
 }
 function Resolve-LocalReferences([string]$GameReferencePath, [string]$BepInExCorePath, [string]$InteropReferencePath) {
-    if (-not $GameReferencePath) { $GameReferencePath = Get-WorkspacePath 'work/interop' }
-    if (-not $BepInExCorePath) { $BepInExCorePath = Get-WorkspacePath 'work/tools/bepinex-pre2/BepInEx/core' }
-    if (-not $InteropReferencePath) { $InteropReferencePath = Get-WorkspacePath 'work/tools/interop-Runtime/net6.0' }
+    if (-not $GameReferencePath) { $GameReferencePath = Get-WorkspacePath 'work/interop-791/generated' }
+    if (-not $BepInExCorePath) { $BepInExCorePath = Get-WorkspacePath 'work/tools/bepinex-791/BepInEx/core' }
+    if (-not $InteropReferencePath) { $InteropReferencePath = Get-WorkspacePath 'work/tools/bepinex-791/BepInEx/core' }
     foreach ($p in @($GameReferencePath, $BepInExCorePath, $InteropReferencePath)) {
         if (-not (Test-Path -LiteralPath $p -PathType Container)) {
             throw "Reference directory missing: $p. Full plugin builds require local game interop and public loader API references; see DEVELOPMENT.md."

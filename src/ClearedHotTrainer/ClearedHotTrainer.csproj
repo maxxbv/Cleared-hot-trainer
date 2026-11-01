@@ -4,9 +4,9 @@
     <PlatformTarget>x64</PlatformTarget>
     <AssemblyName>ClearedHot.LocalAssist</AssemblyName>
     <DebugType>portable</DebugType>
-    <GameReferencePath Condition="'$(GameReferencePath)' == ''">$(MSBuildProjectDirectory)/../../work/interop</GameReferencePath>
-    <BepInExReferencePath Condition="'$(BepInExReferencePath)' == ''">$(MSBuildProjectDirectory)/../../work/tools/bepinex-pre2/BepInEx/core</BepInExReferencePath>
-    <InteropReferencePath Condition="'$(InteropReferencePath)' == ''">$(MSBuildProjectDirectory)/../../work/tools/interop-Runtime/net6.0</InteropReferencePath>
+    <GameReferencePath Condition="'$(GameReferencePath)' == ''">$(MSBuildProjectDirectory)/../../work/interop-791/generated</GameReferencePath>
+    <BepInExReferencePath Condition="'$(BepInExReferencePath)' == ''">$(MSBuildProjectDirectory)/../../work/tools/bepinex-791/BepInEx/core</BepInExReferencePath>
+    <InteropReferencePath Condition="'$(InteropReferencePath)' == ''">$(MSBuildProjectDirectory)/../../work/tools/bepinex-791/BepInEx/core</InteropReferencePath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="$(GameReferencePath)/*.dll"><Private>false</Private></Reference>

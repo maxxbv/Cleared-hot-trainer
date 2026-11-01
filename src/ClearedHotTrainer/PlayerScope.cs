@@ -30,7 +30,7 @@ internal static class PlayerScope
         var components = manager.healthControllers;
         if (components == null) return false;
         for (int i = 0; i < components.Count; i++)
-            if (Same(health, components.get_Item(i))) return true;
+            if (Same(health, components[i])) return true;
         // A passenger, carried enemy, or unrelated child health is not protected.
         return false;
     }

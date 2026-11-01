@@ -51,3 +51,7 @@ tests/Test-Package.ps1 recebe caminhos explícitos e uma fixture de versão comp
 - CI verde: significa apenas o escopo público, sem compilação da integração ou sucesso no jogo.
 
 .NET 6 está fora de suporte; .NET 8 chega ao fim de suporte em novembro de 2026. Planejar atualização separadamente, sem quebrar a API do loader. Fontes: https://dotnet.microsoft.com/en-us/platform/support/policy/dotnet-core e https://devblogs.microsoft.com/dotnet/dotnet-8-9-end-of-support/.
+
+## Referências atuais — 31/10/2026
+
+Os defaults agora usam work/interop-791/generated (cópia dos wrappers gerados pelo loader na instalação real) e work/tools/bepinex-791/BepInEx/core para BepInEx/Harmony/Runtime. Esses caminhos continuam locais e ignorados. Um clone novo precisa fornecer as referências explicitamente. O uso do indexador components[i] é necessário para o List<T> gerado pelo loader; a chamada explícita get_Item do wrapper antigo é recusada pelo compilador.

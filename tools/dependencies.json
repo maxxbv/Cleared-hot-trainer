@@ -34,5 +34,11 @@
     "Source": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/8.0/releases.json",
     "SHA256": "AB9D4E4275DB9683A6B51640122D184C5C6AE5DA680D0C0ED82E994662353CC8",
     "Name": "Microsoft .NET SDK 8.0.427 portable, verified against official SHA512"
+  },
+  {
+    "IncludedInPackage": false,
+    "Source": "https://builds.bepinex.dev/projects/bepinex_be/791/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.791%2Bb782da4.zip",
+    "SHA256": "BB1C510909B69522733791F3A0817A487379A52DA6468A492F1C9C19B3EC6F9A",
+    "Name": "BepInEx Unity IL2CPP win-x64 791 - loader and runtime references validated through plugin loading"
   }
 ]
