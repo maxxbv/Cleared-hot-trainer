@@ -8,7 +8,7 @@ using HarmonyLib;
 
 namespace ClearedHot.LocalAssist;
 
-[BepInPlugin(Id, "Cleared Hot Trainer", "0.1.0-alpha")]
+[BepInPlugin(Id, "Cleared Hot Trainer", "0.1.1-alpha")]
 public sealed class Plugin : BasePlugin
 {
     public const string Id = "local.clearedhot.assist";
@@ -44,8 +44,8 @@ public sealed class Plugin : BasePlugin
     {
         var expected = new Dictionary<string, string>
         {
-            ["GameAssembly.dll"] = "799A0071688939779D17BA2B9C68E9F665FC0124F7080B27657586620FE5C72A",
-            ["ClearedHot_Data/il2cpp_data/Metadata/global-metadata.dat"] = "4D4B444705E4889848971415DAD423000793E3823AC8C974774302B259542A93"
+            ["GameAssembly.dll"] = "391678F4EE191CE0498BD99CBC7DD67AC6D3DC665B061EDFAAFAE5F71B7EE82C",
+            ["ClearedHot_Data/il2cpp_data/Metadata/global-metadata.dat"] = "F8F2D2BD90507D1EFF601988596178C3DD3CFF2E61F2F652D3531BD25F71D06D"
         };
         foreach (var pair in expected)
         {

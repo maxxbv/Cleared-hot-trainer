@@ -55,3 +55,7 @@ tests/Test-Package.ps1 recebe caminhos explícitos e uma fixture de versão comp
 ## Referências atuais — 31/10/2026
 
 Os defaults agora usam work/interop-791/generated (cópia dos wrappers gerados pelo loader na instalação real) e work/tools/bepinex-791/BepInEx/core para BepInEx/Harmony/Runtime. Esses caminhos continuam locais e ignorados. Um clone novo precisa fornecer as referências explicitamente. O uso do indexador components[i] é necessário para o List<T> gerado pelo loader; a chamada explícita get_Item do wrapper antigo é recusada pelo compilador.
+
+## Referências da atualização de 07/11/2026
+
+Defaults atuais: work/interop-20261107/generated, obtidos do loader com o jogo atualizado Unity 6000.3.28f1. Core/Harmony/Interop permanecem do pacote oficial 791 em work/tools/bepinex-791/BepInEx/core. Esses arquivos não são distribuídos. A 0.1.1 exige os novos hashes e recusa binários da 0.1.0.

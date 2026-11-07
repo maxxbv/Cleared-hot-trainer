@@ -40,5 +40,11 @@
     "Source": "https://builds.bepinex.dev/projects/bepinex_be/791/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.791%2Bb782da4.zip",
     "SHA256": "BB1C510909B69522733791F3A0817A487379A52DA6468A492F1C9C19B3EC6F9A",
     "Name": "BepInEx Unity IL2CPP win-x64 791 - loader and runtime references validated through plugin loading"
+  },
+  {
+    "IncludedInPackage": false,
+    "Source": "https://download.unity3d.com/download_unity/8f082d2fe476/MacEditorTargetInstaller/UnitySetup-Windows-Mono-Support-for-Editor-6000.3.28f1.pkg",
+    "SHA256": "DA613F0B0389BD4AD3A423E5A84F1B1251BDE8881ABDE0D4F1A3A2B2A0B368E5",
+    "Name": "Unity 6000.3.28f1 official Windows Mono support - extracted base libraries only, installer never executed"
   }
 ]

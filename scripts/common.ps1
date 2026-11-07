@@ -36,7 +36,7 @@ function Invoke-ProjectDotNet([string[]]$Arguments, [string]$LogName) {
     } finally { Pop-Location }
 }
 function Resolve-LocalReferences([string]$GameReferencePath, [string]$BepInExCorePath, [string]$InteropReferencePath) {
-    if (-not $GameReferencePath) { $GameReferencePath = Get-WorkspacePath 'work/interop-791/generated' }
+    if (-not $GameReferencePath) { $GameReferencePath = Get-WorkspacePath 'work/interop-20261107/generated' }
     if (-not $BepInExCorePath) { $BepInExCorePath = Get-WorkspacePath 'work/tools/bepinex-791/BepInEx/core' }
     if (-not $InteropReferencePath) { $InteropReferencePath = Get-WorkspacePath 'work/tools/bepinex-791/BepInEx/core' }
     foreach ($p in @($GameReferencePath, $BepInExCorePath, $InteropReferencePath)) {

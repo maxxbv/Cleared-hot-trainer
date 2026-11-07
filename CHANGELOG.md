@@ -2,7 +2,14 @@
 
 Seguindo [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) e [Semantic Versioning](https://semver.org/).
 
-## [Unreleased]
+## [0.1.1-alpha] — 2026-11-07
+
+- Atualiza os hashes aceitos para os binários analisados após a atualização do jogo.
+- Recompila com interop gerado para Unity 6000.3.28f1; mantém a verificação dos métodos reais.
+- Documenta correção do erro 404 de bibliotecas Unity usando DLLs exatas extraídas do módulo oficial.
+- Preserva a configuração e o backup anterior durante a remoção da 0.1.0 e instalação da 0.1.1.
+
+## [Histórico da preparação 0.1.0-alpha]
 
 ### Added
 

@@ -11,7 +11,7 @@ Initialize-DotNet $DotNetPath
 $arguments = @('run', '--project', (Get-WorkspacePath 'tests/ClearedHotTrainer.Tests/ClearedHotTrainer.Tests.csproj'), '-c', 'Release')
 if ($NoBuild) { $arguments += @('--no-build', '--no-restore') }
 if ($WithContracts) {
-    if (-not $GameReferencePath) { $GameReferencePath = Get-WorkspacePath 'work/interop-791/generated' }
+    if (-not $GameReferencePath) { $GameReferencePath = Get-WorkspacePath 'work/interop-20261107/generated' }
     if (-not $PluginPath) { $PluginPath = Get-WorkspacePath 'build/bin/ClearedHotTrainer/Release/net6.0/ClearedHot.LocalAssist.dll' }
     $wrapper = Join-Path $GameReferencePath 'Cfinger.Runtime.dll'
     foreach ($path in @($wrapper, $PluginPath)) {

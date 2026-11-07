@@ -4,7 +4,7 @@
     <PlatformTarget>x64</PlatformTarget>
     <AssemblyName>ClearedHot.LocalAssist</AssemblyName>
     <DebugType>portable</DebugType>
-    <GameReferencePath Condition="'$(GameReferencePath)' == ''">$(MSBuildProjectDirectory)/../../work/interop-791/generated</GameReferencePath>
+    <GameReferencePath Condition="'$(GameReferencePath)' == ''">$(MSBuildProjectDirectory)/../../work/interop-20261107/generated</GameReferencePath>
     <BepInExReferencePath Condition="'$(BepInExReferencePath)' == ''">$(MSBuildProjectDirectory)/../../work/tools/bepinex-791/BepInEx/core</BepInExReferencePath>
     <InteropReferencePath Condition="'$(InteropReferencePath)' == ''">$(MSBuildProjectDirectory)/../../work/tools/bepinex-791/BepInEx/core</InteropReferencePath>
   </PropertyGroup>

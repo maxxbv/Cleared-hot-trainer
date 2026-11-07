@@ -2,7 +2,7 @@
 
 Plugin experimental single-player para Cleared Hot, Windows x64, Unity IL2CPP, BepInEx 6 e HarmonyX. Projeto independente e não oficial, sem vínculo com os desenvolvedores do jogo. Não inclui multiplayer ou evasão de anticheat.
 
-**0.1.0-alpha: compila localmente; funcionamento em missão ainda não validado.**
+**0.1.1-alpha: atualização para Unity 6000.3.28f1 (07/11/2026). Validação desta atualização em docs/UPDATE-20261107.md.**
 
 ## Funcionalidades
 
@@ -19,7 +19,7 @@ Compilação e testes estáticos não comprovam detours nativos ou gameplay. Vej
 
 Windows 11 x64, PowerShell 7, Git e SDK .NET 8.0.427 (global.json). Plugin net6.0; testes net8.0. .NET 6 está fora de suporte: atualizar o runtime exige verificar a compatibilidade do loader.
 
-Build completo requer wrappers interop locais desta versão do jogo e referências públicas BepInEx/Il2CppInterop. Não estão no repositório. Para executar, é necessário um loader compatível com Unity 6000.3.23f1/metadata 39; essa combinação continua pendente.
+Build completo requer wrappers interop locais desta versão do jogo e referências públicas BepInEx/Il2CppInterop. Não estão no repositório. Para executar, é necessário um loader compatível com Unity 6000.3.28f1/metadata 39; as bibliotecas exatas e os resultados estão documentados em [UPDATE-20261107.md](docs/UPDATE-20261107.md).
 
 ~~~powershell
 # Compila testes e o mesmo ProtectionPolicy.cs usado em produção; não compila o plugin
@@ -34,7 +34,7 @@ Build completo requer wrappers interop locais desta versão do jogo e referênci
 ./scripts/package.ps1 -SkipBuild
 ~~~
 
-Para outras pastas, usar -GameReferencePath, -BepInExCorePath e -InteropReferencePath em build.ps1/package.ps1. Os defaults work/interop e work/tools reutilizam apenas o ambiente anterior; um clone novo não contém referências. Veja [DEVELOPMENT.md](DEVELOPMENT.md).
+Para outras pastas, usar -GameReferencePath, -BepInExCorePath e -InteropReferencePath em build.ps1/package.ps1. Os defaults work/interop-20261107/generated e work/tools/bepinex-791/BepInEx/core usam o ambiente analisado; um clone novo não contém referências. Veja [DEVELOPMENT.md](DEVELOPMENT.md).
 
 A DLL mantém o nome ClearedHot.LocalAssist.dll e o identificador local.clearedhot.assist para compatibilidade.
 
