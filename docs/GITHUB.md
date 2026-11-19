@@ -17,4 +17,4 @@ A autoria local deste projeto usa maxxbv e o endereço noreply do GitHub. Não s
 
 O CI mantém o escopo público descrito em CI.md. Não criar tags, Releases, uploads de binários ou instalar o trainer como consequência de um push. Publicação de pacotes exige revisão separada do conteúdo.
 
-Relatos sensíveis devem seguir SECURITY.md na raiz. A licença do projeto ainda não foi definida.
+Relatos sensíveis devem seguir SECURITY.md na raiz. O material original do projeto usa a licença MIT, em LICENSE; dependências externas mantêm seus próprios termos.

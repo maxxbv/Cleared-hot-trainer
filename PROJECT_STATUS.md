@@ -17,3 +17,7 @@ Usuário confirmou em 07/11/2026 que os três recursos funcionaram no teste da 0
 Relatório: docs/UPDATE-20261107.md. Histórico anterior: docs/VALIDATION-791.md. Logs atuais em BepInEx/LogOutput.log. Registros completos, backups, wrappers e binários permanecem locais/ignorados. Preservar release/ClearedHotTrainer-0.1.1-alpha/install-state.json e backups para remoção segura com Uninstall.ps1. A remoção da DLL preserva loader/cache/configuração.
 
 Publicação pública de código e documentação autorizada em 19/11/2026: https://github.com/maxxbv/Cleared-hot-trainer. Autoria histórica protegida e repositório original preservado como arquivo privado; ver docs/PUBLICATION.md. CI hospedado compila apenas testes/política públicos, sem wrappers proprietários nem validação de gameplay. Plugin net6.0 exige planejamento separado de atualização de runtime; não alterar dependências do loader sem validar compatibilidade.
+
+## Licença — 19/11/2026
+
+Código próprio e documentação sob MIT (LICENSE), com os avisos originais de ausência de garantia e limitação de responsabilidade. Sem SLA ou compromisso de manutenção contínua. Direitos/licenças do jogo e de dependências externas preservados.

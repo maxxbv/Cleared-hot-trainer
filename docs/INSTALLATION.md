@@ -37,3 +37,7 @@ Remove somente a DLL cujo caminho/hash coincide com o registro. Preserva loader,
 ## Testes e limites
 
 Os três recursos foram confirmados pelo usuário na 0.1.0 em uma sessão anterior. Isso não valida o jogo atualizado: testar novamente dano/componentes/destruição, munição de cada arma/míssil, calor contínuo, restart, troca de helicóptero e novas missões. Inimigos não devem receber os benefícios. Destruição roteirizada e progressão exigem observação. Não há hook global de Destroy. Uso single-player apenas; nenhuma evasão de anticheat.
+
+## Licença
+
+O material original do trainer é distribuído sob a licença MIT, incluída em LICENSE neste pacote. Preserve esse arquivo ao redistribuir cópias ou partes substanciais. O software é fornecido no estado em que se encontra, sem as garantias indicadas na licença; o projeto não oferece SLA ou compromisso de atualizações futuras. A MIT não abrange o jogo, seus arquivos nem as dependências externas, que conservam seus próprios termos.

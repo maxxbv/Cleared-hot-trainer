@@ -69,10 +69,17 @@ O loader não é incluído. O requisito conservador build 791+/Interop 1.5.3+ n�
 
 A versão do jogo é fixa por hashes; atualizações são recusadas. Saúde de componentes, cutscenes, respawn, transições e objetivos dependentes de destruição precisam ser testados. Destroy global não é bloqueado indiscriminadamente.
 
-A API BepInEx pre.2 foi usada somente como referência de compilação, acompanhada de Interop 1.5.3 e wrappers reais. Não é uma recomendação de loader misturado. Nenhuma licença pública do projeto foi escolhida nesta etapa; direitos do jogo e licenças das ferramentas permanecem com seus titulares.
+A API BepInEx pre.2 foi usada somente como referência de compilação, acompanhada de Interop 1.5.3 e wrappers reais. Não é uma recomendação de loader misturado. O código próprio e a documentação do projeto usam a [licença MIT](LICENSE); direitos do jogo e licenças das ferramentas permanecem com seus titulares.
 
 Detalhes: [ARCHITECTURE.md](ARCHITECTURE.md), [docs/TESTING.md](docs/TESTING.md), [docs/GITHUB.md](docs/GITHUB.md).
 
 ## Publicação e segurança
 
-O código e a documentação são públicos. Binários do jogo, metadata, wrappers, bibliotecas Unity, loader, backups, saves e logs permanecem locais e não acompanham o repositório. O build completo exige referências locais da versão analisada. Consulte [SECURITY.md](SECURITY.md) para relatar vulnerabilidades e [docs/PUBLICATION.md](docs/PUBLICATION.md) para o escopo da revisão de publicação. A licença do projeto ainda não foi definida.
+O código e a documentação são públicos. Binários do jogo, metadata, wrappers, bibliotecas Unity, loader, backups, saves e logs permanecem locais e não acompanham o repositório. O build completo exige referências locais da versão analisada. Consulte [SECURITY.md](SECURITY.md) para relatar vulnerabilidades e [docs/PUBLICATION.md](docs/PUBLICATION.md) para o escopo da revisão de publicação. Código próprio e documentação sob [licença MIT](LICENSE).
+
+
+## Licença e suporte
+
+A licença MIT permite usar, modificar, distribuir e comercializar o código, preservando os avisos de autoria e licença. O software é fornecido no estado em que se encontra, com as cláusulas de ausência de garantia e limitação de responsabilidade do texto original em LICENSE. O projeto não oferece SLA nem compromisso de suporte, manutenção contínua ou compatibilidade com futuras atualizações.
+
+A MIT abrange somente o material original deste projeto. Não licencia Cleared Hot, assets, metadata, wrappers gerados, bibliotecas Unity ou dependências de terceiros. Cada componente externo mantém seus próprios termos. O projeto é independente e não é endossado pelos desenvolvedores do jogo.

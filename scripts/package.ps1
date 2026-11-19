@@ -9,7 +9,7 @@ $templateNames = @('Install.ps1','Uninstall.ps1','Package.Common.ps1')
 foreach ($name in $templateNames) {
     if (-not (Test-Path -LiteralPath (Join-Path $PSScriptRoot ('package-template/' + $name)) -PathType Leaf)) { throw "Package template missing: $name" }
 }
-foreach ($name in @('docs/INSTALLATION.md','docs/TESTING.md','PROJECT_STATUS.md','ARCHITECTURE.md','CHANGELOG.md')) {
+foreach ($name in @('docs/INSTALLATION.md','docs/TESTING.md','PROJECT_STATUS.md','ARCHITECTURE.md','CHANGELOG.md','LICENSE')) {
     if (-not (Test-Path -LiteralPath (Get-WorkspacePath $name) -PathType Leaf)) { throw "Package document missing: $name" }
 }
 $refs = Resolve-LocalReferences $GameReferencePath $BepInExCorePath $InteropReferencePath
@@ -30,7 +30,7 @@ Copy-Item -LiteralPath $dll -Destination $payload
 foreach ($name in $templateNames) {
     Copy-Item -LiteralPath (Join-Path $PSScriptRoot ('package-template/' + $name)) -Destination $package
 }
-foreach ($name in @('PROJECT_STATUS.md','ARCHITECTURE.md','CHANGELOG.md')) {
+foreach ($name in @('PROJECT_STATUS.md','ARCHITECTURE.md','CHANGELOG.md','LICENSE')) {
     Copy-Item -LiteralPath (Get-WorkspacePath $name) -Destination $package
 }
 Copy-Item -LiteralPath (Get-WorkspacePath 'docs/INSTALLATION.md') -Destination (Join-Path $package 'README.md')
@@ -41,7 +41,7 @@ Copy-Item -LiteralPath (Get-WorkspacePath 'docs/TESTING.md') -Destination (Join-
     RelativePath=$relative; SHA256=(Get-FileHash -LiteralPath $payload -Algorithm SHA256).Hash
     LoaderIncluded=$false; GameReferencesIncluded=$false
 } | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $package 'manifest.json') -Encoding utf8
-$expected = @(('payload/' + $relative.Replace('\','/')), 'Install.ps1','Uninstall.ps1','Package.Common.ps1','README.md','PROJECT_STATUS.md','ARCHITECTURE.md','CHANGELOG.md','docs/TESTING.md','manifest.json')
+$expected = @(('payload/' + $relative.Replace('\','/')), 'Install.ps1','Uninstall.ps1','Package.Common.ps1','README.md','PROJECT_STATUS.md','ARCHITECTURE.md','CHANGELOG.md','LICENSE','docs/TESTING.md','manifest.json')
 $actualFiles = @(Get-ChildItem -LiteralPath $package -File -Recurse)
 if ($actualFiles.Count -ne $expected.Count) { throw 'Package file count differs from allowlist.' }
 foreach ($file in $actualFiles) {

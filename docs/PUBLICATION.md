@@ -18,4 +18,4 @@ Configuração pretendida: secret scanning e proteção de push contra segredos,
 
 O repositório contém código-fonte e documentação, sem binários do jogo, metadata, wrappers, bibliotecas Unity, loader, backups, saves ou credenciais. Nenhum ZIP ou DLL local é enviado automaticamente como Release. O CI valida somente o escopo público documentado em docs/CI.md.
 
-A licença de redistribuição do projeto ainda não foi definida. A mudança de visibilidade não acrescenta um arquivo LICENSE nem altera as licenças dos componentes externos. Ver fontes em tools/dependencies.json.
+Após autorização do proprietário em 19/11/2026 para tornar o projeto de código aberto, o material original do projeto passou a usar a licença MIT, no arquivo LICENSE. Foram preservadas as cláusulas originais de ausência de garantia e limitação de responsabilidade, sem prometer imunidade jurídica absoluta. A licença não altera direitos ou termos dos componentes externos. Ver fontes em tools/dependencies.json.
