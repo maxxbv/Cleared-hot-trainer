@@ -72,3 +72,7 @@ A versão do jogo é fixa por hashes; atualizações são recusadas. Saúde de c
 A API BepInEx pre.2 foi usada somente como referência de compilação, acompanhada de Interop 1.5.3 e wrappers reais. Não é uma recomendação de loader misturado. Nenhuma licença pública do projeto foi escolhida nesta etapa; direitos do jogo e licenças das ferramentas permanecem com seus titulares.
 
 Detalhes: [ARCHITECTURE.md](ARCHITECTURE.md), [docs/TESTING.md](docs/TESTING.md), [docs/GITHUB.md](docs/GITHUB.md).
+
+## Publicação e segurança
+
+O código e a documentação são públicos. Binários do jogo, metadata, wrappers, bibliotecas Unity, loader, backups, saves e logs permanecem locais e não acompanham o repositório. O build completo exige referências locais da versão analisada. Consulte [SECURITY.md](SECURITY.md) para relatar vulnerabilidades e [docs/PUBLICATION.md](docs/PUBLICATION.md) para o escopo da revisão de publicação. A licença do projeto ainda não foi definida.

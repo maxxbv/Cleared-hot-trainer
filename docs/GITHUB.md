@@ -1,20 +1,8 @@
 # Git e publicação
 
-Estado atual: https://github.com/maxxbv/Cleared-hot-trainer foi criado como privado e recebeu main após autorização explícita. A publicação usou Git Credential Manager e a integração conectada; gh não é obrigatório para esse fluxo. As instruções abaixo permanecem como referência para operações futuras. Não alterar a visibilidade sem autorização.
+Endereço canônico: https://github.com/maxxbv/Cleared-hot-trainer. Publicação pública autorizada em 19/11/2026, após revisão dos conteúdos históricos e proteção da autoria. O repositório anterior fica preservado como arquivo privado; ver PUBLICATION.md.
 
-Repositório local em main. Não criar remoto/push, tags ou releases automaticamente.
-
-Git disponível; gh não encontrado no PATH. Instalação sugerida, a executar pelo usuário:
-
-~~~powershell
-winget install --id GitHub.cli --exact --source winget
-gh --version
-gh auth login
-~~~
-
-Autenticação interativa deve ser realizada pelo usuário. Não salvar tokens em arquivos.
-
-## Antes do primeiro commit
+## Antes de enviar alterações
 
 ~~~powershell
 git status --short --branch
@@ -23,24 +11,10 @@ git diff --cached --stat
 git diff --cached --check
 ~~~
 
-Revisar git ls-files e git log --all quando já houver histórico. Não havia repositório/histórico na auditoria inicial. audit.ps1 verifica candidatos e informa commits, mas não é detector completo de segredos históricos. .gitignore não remove dados já versionados; segredos expostos exigem revogação/rotação e tratamento do histórico antes de publicar.
+O auditor padrão lê os blobs exatos do índice. A publicação de 19/11/2026 também revisou separadamente os quatro snapshots anteriores. O auditor não substitui revisão humana nem é detector completo de segredos históricos. Não incluir binários, referências proprietárias, backups, saves, credenciais ou logs pessoais. Dados sensíveis publicados exigem tratamento imediato; remover só da versão atual não limpa o histórico.
 
-Mensagem sugerida, não executada automaticamente:
+A autoria local deste projeto usa maxxbv e o endereço noreply do GitHub. Não substituir pela identidade pessoal em commits futuros sem considerar a exposição pública. Nunca colocar tokens no remoto, em comandos registrados ou em arquivos versionados; usar a autenticação existente do Git Credential Manager.
 
-~~~powershell
-git commit -m "chore: initialize cleared hot trainer project"
-~~~
+O CI mantém o escopo público descrito em CI.md. Não criar tags, Releases, uploads de binários ou instalar o trainer como consequência de um push. Publicação de pacotes exige revisão separada do conteúdo.
 
-## Somente após autorização explícita
-
-Substituir SEU_USUARIO e preferir privado:
-
-~~~powershell
-gh repo create SEU_USUARIO/Cleared-hot-trainer --private --source . --remote origin
-git remote -v
-git push -u origin main
-~~~
-
-São instruções, não ações executadas. Não criar tags/releases antes de validação real.
-
-Referências: https://cli.github.com/manual/gh_repo_create e https://cli.github.com/manual/gh_auth_login.
+Relatos sensíveis devem seguir SECURITY.md na raiz. A licença do projeto ainda não foi definida.
